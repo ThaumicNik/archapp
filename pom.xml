@@ -18,7 +18,6 @@
         <module>user-service</module>
         <module>notification-service</module>
         <module>shared-contract</module>
-        <module>balance-service</module>
     </modules>
 
     <properties>
