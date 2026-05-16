@@ -6,7 +6,6 @@ services:
     container_name: balance-service-lab5
     environment:
       SPRING_RABBITMQ_HOST: 'rabbitmq'
-      SPRING_DATASOURCE_URL: 'jdbc:postgresql://balance-db:5432/balance-db'
       AXON_AXONSERVER_SERVERS: 'axonserver:8124'
     networks:
       - balance-net
@@ -39,7 +38,6 @@ services:
     environment:
       SPRING_DATA_REDIS_HOST: 'user-keydb'
       SPRING_RABBITMQ_HOST: 'rabbitmq'
-      SPRING_DATASOURCE_URL: 'jdbc:postgresql://user-db:5432/apidemo-db'
     networks:
       - user-net
       - shared-net
